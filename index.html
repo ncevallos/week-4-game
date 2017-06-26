@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Crystals Collector Game!</h1>
+      <div id="howToPlay">
+      <p>You will be given a random number at the start of the game.<br>
+      <br>
+      There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br>
+      <br>
+      You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.<br>
+      <br>
+      The value of each crystal is hidden from you until you click on it.<br>
+      <br>
+      Each time when the game starts, the game will change the values of each crystal.</p>
+      </div>
+      <div id="goalScore">
+      <!--goal score gets inserted here -->
+      </div>
+      <div id="gameText">
+        <!--Game information like wins and losses will be loaded here -->
+      </div>
+      <div id="imageContainer">
+      <img src="assets/images/blueCrystal.jpg" id="blueCrystal0" class="crystalImages" alt="Blue Crystal">
+      <img src="assets/images/greenCrystal.png" class="crystalImages" alt="Green Crystal" id="greenCrystal1">
+      <img src="assets/images/purpleCrystal.jpg" class="crystalImages" alt="Purple Crystal" id="purpleCrystal2">
+      <img src="assets/images/redCrystal.png" class="crystalImages" alt="Red Crystal" id="redCrystal3">
+      </div>
+        <div class="totalScore">
+        Your total score is: 
+        </div>
+        <div id="playerScore" class="totalScore">
+        <!--Guesses will be displayed here -->
+        </div>
+    </div>
+
+
+
+  </body>
+</html>

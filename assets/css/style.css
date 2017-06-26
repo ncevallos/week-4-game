@@ -1,0 +1,57 @@
+body {
+	padding: 10px;
+	background-image: url("../images/cheap_diagonal_fabric.png");
+}
+
+h1 {
+	font-size: 36px;
+	color: white;
+	background-color: orange;
+	font-weight: bold;
+    display: table-cell;
+    padding: 20px;
+}
+
+#howToPlay {
+	color: green;
+	background-color: antiquewhite;
+	font-size: 24px;
+    width: 60%;
+    margin-top: 15px;
+
+}
+#goalScore, #gameText {
+	display: inline-block;
+	float: left;
+	color: black;
+}
+
+#goalScore {
+	background-color: green;
+	width: 30%;
+	font-size: 36px;
+	margin: 10px;
+	padding: 5px;
+}
+
+#gameText {
+	background-color: aqua;
+	width: 15%;
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+}
+#imageContainer {
+	clear: both;
+}
+.crystalImages {
+	width: 150px;
+	height: 150px;
+}
+.totalScore {
+	background-color: teal;
+	width: 35%;
+	color: #fff;
+	margin: 10px;
+	font-size: 24px;
+}
