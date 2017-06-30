@@ -40,12 +40,12 @@ function initializeCrystalValues(){
  //function below checks the player's score against the goal score and determines if a player has win, lost, or is to keep playing.
 function checkScore(){
 	 	if(playerScore==goalScore){
-		alert("You WIN!");
+		//alert("You WIN!"); optional alert
 		wins++;
 		initializeCrystalValues();
 	}
 	else if(playerScore > goalScore){
-		alert("You went over the goal score. YOU LOSE!");
+		//alert("You went over the goal score. YOU LOSE!"); optional alert
 		losses++;
 		initializeCrystalValues();
 	}
@@ -55,27 +55,10 @@ function checkScore(){
 
 
 //the code below refreshes each time the mouse is clicked, and displays data like the player's current score, goal score, and updates their wins and losses.
-document.onclick = function(event) {
+$(document).on("click", function(){
 
-
-        var html =
-          "<p>Goal Score: " + goalScore + "</p>";
-
-        // The html that displays the goal score.
-        document.querySelector("#goalScore").innerHTML = html;
-
-        var html2 =
-          "<p>Wins: " + wins + "<br>" +
-          "Losses: " + losses + "</p>";
-
-        // The html that displays the losses, and wins.
-        document.querySelector("#gameText").innerHTML = html2;
-
-        var html3 =
-          "<p>" + playerScore + "</p>";
-
-        // The html that displays the player's score.
-        document.querySelector("#playerScore").innerHTML = html3;
-
-
-        };
+        $("#goalScore2").html(goalScore);
+        $("#wins").html(wins);
+        $("#losses").html(losses);
+        $("#playerScore").html(playerScore);
+})
